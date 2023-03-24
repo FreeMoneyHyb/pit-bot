@@ -205,8 +205,8 @@ let messageLogged = false;
       hook1.send(`${bot.username}: Found New Lobby (Size ${playerCount})`)
       console.log(`${bot.username}: Switched Lobbys (Size ${playerCount})`);
       sleep(1500)
-      enabled = false
-      silents = false
+      enabled = true
+      silents = true
     }, randomDelaytr());
     
     bot.on('messagestr', async (message) => {
